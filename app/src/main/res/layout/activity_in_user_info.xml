@@ -33,6 +33,7 @@
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/in_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
@@ -56,6 +57,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/in_loc"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -80,6 +82,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/investor_type"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -101,6 +104,7 @@
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/in_telp_no"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
@@ -121,6 +125,7 @@
         app:hintTextColor="@color/black">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/in_linkedin_acc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
@@ -131,6 +136,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btn_next"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

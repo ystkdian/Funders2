@@ -36,6 +36,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/fund_category"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -60,6 +61,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/range"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,6 +73,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btn_finish"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

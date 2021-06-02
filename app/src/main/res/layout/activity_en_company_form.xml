@@ -37,6 +37,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/en_nama"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -57,6 +58,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/en_pitch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/longedittext"
@@ -86,6 +88,7 @@
             app:endIconTint="@color/black">
 
             <AutoCompleteTextView
+                android:id="@+id/en_umkm_loc"
                 android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -107,6 +110,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/business_model"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -127,6 +131,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/en_revenue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -147,6 +152,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/burn_rate"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -167,6 +173,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/company_age"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -187,6 +194,7 @@
             app:hintTextColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/employee_numb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textColor="@color/black"
@@ -210,6 +218,7 @@
             app:endIconTint="@color/black">
 
             <AutoCompleteTextView
+                android:id="@+id/sector"
                 android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -221,6 +230,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btn_next"
             android:layout_marginVertical="40dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

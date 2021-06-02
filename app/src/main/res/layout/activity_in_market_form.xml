@@ -36,6 +36,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/market_loc"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -60,6 +61,7 @@
         app:endIconTint="@color/black">
 
         <AutoCompleteTextView
+            android:id="@+id/sector"
             android:padding="15dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
