@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/margin"
     android:orientation="vertical"
-    tools:context=".ui.entrepreneur.EnFundFormActivity">
+    tools:context=".ui.formentrepreneur.EnFundFormActivity">
 
     <TextView
         style="@style/H2"

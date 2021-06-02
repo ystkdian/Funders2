@@ -9,20 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Funders">
-        <activity android:name=".ui.investor.InMarketFormActivity"></activity>
-        <activity android:name=".ui.investor.InFundFormActivity" />
-        <activity android:name=".ui.investor.InUserInfoActivity" />
-        <activity android:name=".ui.investor.InWelcomeActivity" />
-        <activity android:name=".ui.SignInActivity" />
-        <activity android:name=".ui.FinishSignupActivity" />
-        <activity android:name=".ui.entrepreneur.EnFundFormActivity" />
-        <activity android:name=".ui.entrepreneur.EnCompanyFormActivity" />
-        <activity android:name=".ui.entrepreneur.EnUserInfoFormActivity" />
-        <activity android:name=".ui.entrepreneur.EnWelcomeActivity" />
-        <activity android:name=".ui.ChooseRoleActivity" />
-        <activity android:name=".ui.SignUpActivity" />
-        <activity android:name=".ui.HomeActivity" />
-        <activity android:name=".ui.SplashScreenActivity">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".ui.forminvestor.InMarketFormActivity" />
+        <activity android:name=".ui.forminvestor.InFundFormActivity" />
+        <activity android:name=".ui.forminvestor.InUserInfoActivity" />
+        <activity android:name=".ui.forminvestor.InWelcomeActivity" />
+        <activity android:name=".ui.signin.SignInActivity" />
+        <activity android:name=".ui.signup.FinishSignupActivity" />
+        <activity android:name=".ui.formentrepreneur.EnFundFormActivity" />
+        <activity android:name=".ui.formentrepreneur.EnCompanyFormActivity" />
+        <activity android:name=".ui.formentrepreneur.EnUserInfoFormActivity" />
+        <activity android:name=".ui.formentrepreneur.EnWelcomeActivity" />
+        <activity android:name=".ui.signup.ChooseRoleActivity" />
+        <activity android:name=".ui.signup.SignUpActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

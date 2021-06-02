@@ -1,12 +1,12 @@
-package com.example.funders.ui
+package com.example.funders.ui.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.funders.R
 
-class HomeActivity : AppCompatActivity() {
+class ChooseRoleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_choose_role)
     }
 }

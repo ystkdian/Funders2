@@ -1,12 +1,12 @@
-package com.example.funders.ui.entrepreneur
+package com.example.funders.ui.signin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.funders.R
 
-class EnWelcomeActivity : AppCompatActivity() {
+class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_en_welcome)
+        setContentView(R.layout.activity_sign_in)
     }
 }

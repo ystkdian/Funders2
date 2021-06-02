@@ -1,4 +1,4 @@
-package com.example.funders.ui.entrepreneur
+package com.example.funders.ui.formentrepreneur
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

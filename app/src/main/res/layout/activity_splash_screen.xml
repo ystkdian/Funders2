@@ -8,7 +8,7 @@
     android:padding="@dimen/margin"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ui.SplashScreenActivity">
+    tools:context=".ui.splashscreen.SplashScreenActivity">
 
     <ImageView
         android:id="@+id/image_splash"

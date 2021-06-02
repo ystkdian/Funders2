@@ -1,12 +1,12 @@
-package com.example.funders.ui.investor
+package com.example.funders.ui.formentrepreneur
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.funders.R
 
-class InWelcomeActivity : AppCompatActivity() {
+class EnUserInfoFormActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_in_welcome)
+        setContentView(R.layout.activity_en_user_info)
     }
 }

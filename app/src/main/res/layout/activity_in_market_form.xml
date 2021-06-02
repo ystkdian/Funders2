@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/margin"
     android:orientation="vertical"
-    tools:context=".ui.investor.InMarketFormActivity">
+    tools:context=".ui.forminvestor.InMarketFormActivity">
 
     <TextView
         style="@style/H2"

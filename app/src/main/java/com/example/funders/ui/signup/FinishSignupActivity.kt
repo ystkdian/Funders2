@@ -1,4 +1,4 @@
-package com.example.funders.ui
+package com.example.funders.ui.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

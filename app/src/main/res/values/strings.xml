@@ -25,6 +25,8 @@
     <string name="choose_role">Pilih peran kamu</string>
     <string name="umkm">UMKM</string>
     <string name="investor">Investor</string>
+    <string name="home">Beranda</string>
+    <string name="profile">Profile</string>
 
     <string name="hai">Hai!</string>
     <string name="en_start">Yuk cari Investor yang tepat buat kamu dan bikin bisnis kamu didanai! Tapi, untuk bantu Investor kenal kamu lebih baik, kami perlu beberapa informasi nih dari kamu. Lanjut?</string>
@@ -63,6 +65,14 @@
 
     <string name="hooray">Hore!</string>
     <string name="form_finished_desc">Kamu sudah menyelesaikan semua yang diperlukan. Sekarang kamu hanya perlu menunggu tim kami untuk meninjau profilmu. Kami akan segera beritahu kamu jika sudah selesai ;)</string>
+
+    <string name="investor_match">Ini dia, UMKM yang cocok dengan profilmu</string>
+    <string name="entrepreur_match">Ini dia, Investor yang cocok dengan profilmu</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_investor">Investor</string>
+    <string name="title_umkm">UMKM</string>
+    <string name="title_profile">Profile</string>
 
     <string-array name="location">
         <item>Jakarta</item>
