@@ -1,10 +1,10 @@
-package com.example.funders.ui.ui.notifications
+package com.example.funders.ui.entrepreneur
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class EntrepreneurViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"
