@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".ui.FinishSignupActivity">
+
+    <ImageView
+        android:layout_width="366dp"
+        android:layout_height="244dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/verifying" />
+
+    <TextView
+        style="@style/H2"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hooray"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        style="@style/H4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:text="@string/form_finished_desc"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/sign_in"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
