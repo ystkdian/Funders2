@@ -5,6 +5,8 @@
     <dimen name="h1">30sp</dimen>
     <dimen name="h2">23sp</dimen>
     <dimen name="h3">20sp</dimen>
+    <dimen name="h3b">19sp</dimen>
+    <dimen name="h3c">18sp</dimen>
     <dimen name="h4">15sp</dimen>
     <dimen name="h5">13sp</dimen>
     <dimen name="h6">12sp</dimen>

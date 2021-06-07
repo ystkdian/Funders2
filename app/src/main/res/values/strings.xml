@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Funders</string>
+    <string name="title_activity_main">Funders</string>
     <string name="welcome">Selamat Datang di Funders!</string>
     <string name="funders_desc">Funders merupakan aplikasi yang bertujuan untuk mempertemukan UMKM Indonesia dan Investor dengan mudah!</string>
     <string name="btn_start">Yuk Mulai!</string>
@@ -37,34 +38,36 @@
     <string name="form_title_1">Pertama,</string>
     <string name="form_title_2">Sekarang,</string>
     <string name="form_title_3">Terakhir,</string>
-
-    <string name="form_1_desc">Kami mau tau mengenai kamu. Jadi, coba ceritain tentang diri kamu</string>
-    <string name="form_2_desc_en">Kami ingin tau mengenai bisnis kamu. Jadi, coba ceritain tentang bisnis kamu</string>
-    <string name="form_2_desc_in">Kami mau tau mengenai pasar yang kamu cari. Jadi, coba ceritain tentang preferensimu</string>
-    <string name="form_3_desc_en">Kami ingin tau mengenai kebutuhan pendanaan kamu. Jadi, coba ceritain tentang profil pendanaanmu</string>
-    <string name="form_3_desc_in">Kami mau tau mengenai profil investasimu. Jadi, coba ceritain tentang profilmu</string>
+    <string name="form_header_in">Hai, kami ingin tau nih mengenai kamu, pasar investasi yang kamu inginkan, dan profil investasimu. Isi form di bawah ini ya!</string>
+    <string name="form_header_en">Hai, kami ingin tau nih mengenai kamu, UMKM kamu, dan kebutuhan pendanaanmu. Isi form di bawah ini ya!</string>
+    <string name="form_1_desc">Kami ingin tau mengenai kamu. Jadi, coba ceritain tentang diri kamu</string>
+    <string name="form_2_desc_en">Kami ingin tau mengenai UMKM kamu nih. Silahkan diisi:)</string>
+    <string name="form_2_desc_in">kami ingin tau mengenai UMKM yang kamu cari nih. Silahkan diisi:)</string>
+    <string name="form_3_desc_en">Kami ingin tau mengenai kebutuhan pendanaanmu</string>
+    <string name="form_3_desc_in">Kami ingin tau mengenai profil investasimu</string>
+    <string name="form_footer_thanks">Terima kasih!</string>
+    <string name="form_footer_desc">Sekarang klik ‘Selesai’</string>
 
     <string name="finish">Selesai</string>
 
-    <string name="name">Nama*</string>
-    <string name="location">Lokasi*</string>
-    <string name="position">Jabatan</string>
-    <string name="telp_no">No. telepon aktif*</string>
-    <string name="linkedin">Akun LinkedIn*</string>
-    <string name="pitch">Cerita singkat mengenai bisnis kamu*</string>
-    <string name="business_model">Model Bisnis</string>
-    <string name="revenue">Penghasilan*</string>
-    <string name="burn_rate">Burn rate*</string>
+    <string name="name">Nama</string>
+    <string name="telp_no">No. telepon aktif</string>
+    <string name="address">Alamat</string>
+    <string name="province">Provinsi</string>
+    <string name="city">Kab/Kota</string>
+    <string name="sector">Sektor</string>
     <string name="company_age">Lama berdiri</string>
     <string name="employee_number">Jumlah pegawai</string>
-    <string name="investor_type">Tipe Investor*</string>
-    <string name="sector">Sektor*</string>
-    <string name="funding_category">Kategori pendanaan*</string>
-    <string name="range">Range*</string>
-    <string name="invest_category">Kategori Investasi*</string>
+    <string name="income">Kisaran Penghasilan</string>
+    <string name="burn_rate">Burn rate</string>
+    <string name="funding_category">Kategori pendanaan</string>
+    <string name="range">Kisaran pendanaan</string>
+
+    <string name="umkm_list">Daftar UMKM</string>
+    <string name="investor_list">Daftar Investor</string>
 
     <string name="hooray">Hore!</string>
-    <string name="form_finished_desc">Kamu sudah menyelesaikan semua yang diperlukan. Sekarang kamu hanya perlu menunggu tim kami untuk meninjau profilmu. Kami akan segera beritahu kamu jika sudah selesai ;)</string>
+    <string name="form_finished_desc">Kamu sudah menyelesaikan semua yang diperlukan. Sekarang kamu bisa langsung masuk. Silahkan klik ‘Masuk‘ :)</string>
 
     <string name="investor_match">Ini dia, UMKM yang cocok dengan profilmu</string>
     <string name="entrepreur_match">Ini dia, Investor yang cocok dengan profilmu</string>
@@ -73,6 +76,7 @@
     <string name="title_investor">Investor</string>
     <string name="title_umkm">UMKM</string>
     <string name="title_profile">Profile</string>
+    <string name="item_list">Item List</string>
 
     <string-array name="location">
         <item>Jakarta</item>
@@ -85,7 +89,7 @@
         <item>Surabaya</item>
     </string-array>
 
-    <string-array name="Lokasi">
+    <string-array name="Location">
         <item>Jakarta</item>
         <item>Bandung</item>
         <item>Bali</item>
@@ -95,8 +99,48 @@
         <item>Yogyakarta</item>
         <item>Surabaya</item>
     </string-array>
+
+    <string-array name="Sector">
+        <item>Consumer Goods Industry</item>
+        <item>Basic Industry and Chemicals</item>
+        <item>Infrastructure, Utilities and Transportation</item>
+        <item>Finance</item>
+        <item>Trade, Service and Investment</item>
+        <item>Mining</item>
+        <item>Agriculture</item>
+        <item>Property and Real Estate</item>
+    </string-array>
+
+    <string-array name="range_fund">
+        <item>&lt; 50 juta</item>
+        <item>50 juta - 500 juta</item>
+        <item>&gt; 500 juta</item>
+    </string-array>
+
+    <string-array name="range_year">
+        <item>&lt; 1 tahun</item>
+        <item>1 tahun - 5 tahun</item>
+        <item>&gt; 5 tahun</item>
+    </string-array>
+
+    <string-array name="range_employees">
+        <item>&lt; 10</item>
+        <item>10 – 30</item>
+        <item>&gt; 30</item>
+    </string-array>
+
+    <string-array name="range_income">
+        <item>&lt; 300 juta</item>
+        <item>300 juta - 2,5 milyar</item>
+        <item>&gt; 500 milyar</item>
+    </string-array>
+
+    <string-array name="burn_rate">
+        <item>&lt; 4 juta</item>
+        <item>4 juta - 40 juta</item>
+        <item>&gt; 40 juta</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_main">Funders</string>
 
 </resources>

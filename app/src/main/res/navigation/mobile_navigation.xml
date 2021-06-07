@@ -15,17 +15,17 @@
         android:id="@+id/navigation_investor"
         android:name="com.example.funders.ui.investor.InvestorFragment"
         android:label="@string/title_investor"
-        tools:layout="@layout/fragment_investor_home" />
+        tools:layout="@layout/fragment_investor" />
 
     <fragment
         android:id="@+id/navigation_umkm"
-        android:name="com.example.funders.ui.entrepreneur.EntrepreneurFragment"
+        android:name="com.example.funders.ui.umkm.UmkmFragment"
         android:label="@string/title_umkm"
-        tools:layout="@layout/fragment_entrepreneur_home" />
+        tools:layout="@layout/fragment_umkm" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.funders.ui.entrepreneur.EntrepreneurFragment"
+        android:name="com.example.funders.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 

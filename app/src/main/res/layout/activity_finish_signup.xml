@@ -12,7 +12,7 @@
         android:layout_width="366dp"
         android:layout_height="244dp"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="104dp"
         android:src="@drawable/verifying" />
 
     <TextView
@@ -33,16 +33,29 @@
         android:text="@string/form_finished_desc"
         android:textAlignment="center"/>
 
-    <Button
-        android:id="@+id/btn_sign_in"
-        android:layout_marginTop="40dp"
+    <RelativeLayout
+        android:id="@+id/container_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="@string/sign_in"
-        android:textSize="17sp"
-        android:fontFamily="@font/poppins_bold"
-        android:textAllCaps="false"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_btn"
+            android:layout_gravity="center">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_btn_sign_in"
+            style="@style/H3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 </LinearLayout>

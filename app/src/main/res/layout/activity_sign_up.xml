@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="@dimen/margin"
+    android:padding="@dimen/margin"
     android:background="@color/white">
 
     <TextView
@@ -38,8 +38,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittext"
         app:boxStrokeWidth="0dp"
-        android:hint="@string/enter_email"
-        app:hintTextColor="@color/black">
+        app:boxStrokeWidthFocused="0dp"
+        android:hint="@string/enter_email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_email"
@@ -48,7 +48,7 @@
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_regular"
             android:background="@drawable/edittext"
-            android:inputType="text" />
+            android:inputType="textEmailAddress" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,10 +59,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittext"
         app:boxStrokeWidth="0dp"
-        app:endIconMode="password_toggle"
-        app:endIconTint="@color/black"
-        android:hint="@string/enter_password"
-        app:hintTextColor="@color/black">
+        app:boxStrokeWidthFocused="0dp"
+        app:passwordToggleEnabled="true"
+        android:hint="@string/enter_password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_pass"
@@ -71,7 +70,7 @@
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/black"
             android:background="@drawable/edittext"
-            android:inputType="text" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,10 +81,9 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edittext"
         app:boxStrokeWidth="0dp"
-        app:endIconMode="password_toggle"
-        app:endIconTint="@color/black"
-        android:hint="@string/reenter_pass"
-        app:hintTextColor="@color/black">
+        app:boxStrokeWidthFocused="0dp"
+        app:passwordToggleEnabled="true"
+        android:hint="@string/reenter_pass">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reenter_pass"
@@ -94,21 +92,34 @@
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/black"
             android:background="@drawable/edittext"
-            android:inputType="text" />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_marginTop="40dp"
+    <RelativeLayout
+        android:id="@+id/container_all_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="@string/next"
-        android:textSize="17sp"
-        android:fontFamily="@font/poppins_bold"
-        android:textAllCaps="false"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_btn"
+            android:layout_gravity="center">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_btn_next"
+            style="@style/H3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -128,12 +139,12 @@
         <TextView
             android:id="@+id/navigate_to_sign_in"
             style="@style/H5"
-            android:layout_marginStart="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/purple_200"
+            android:layout_marginStart="5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="@string/sign_in" />
+            android:text="@string/sign_in"
+            android:textColor="@color/purple_200" />
 
     </LinearLayout>
 

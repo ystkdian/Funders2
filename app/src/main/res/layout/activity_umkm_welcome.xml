@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.formumkm.UmkmWelcomeActivity">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="343dp"
+        android:layout_height="347dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hi_entrepreneur" />
+
+    <TextView
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hai"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        style="@style/H4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:layout_gravity="center"
+        android:text="@string/en_start"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:id="@+id/container_all_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/all_btn"
+            android:layout_gravity="center">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_btn_next"
+            style="@style/H3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next2"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_grey"
+            android:layout_gravity="center">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tv_btn_back"
+            style="@style/H3B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/just_back"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

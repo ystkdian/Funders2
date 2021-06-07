@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.formumkm.UmkmFormActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/form_header"/>
+
+        <LinearLayout
+            android:id="@+id/container_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin">
+
+            <TextView
+                style="@style/H3B"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/form_header_en"/>
+
+            <TextView
+                style="@style/H3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/form_title_1"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/H4"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_1_desc"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/in_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/telp_no">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/in_telp_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/longedittext"
+                android:hint="@string/address"
+                android:paddingHorizontal="12dp"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/en_pitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/longedittext"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/separator_1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line_separator"
+            android:layout_below="@id/container_1"/>
+
+        <LinearLayout
+            android:id="@+id/container_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin"
+            android:layout_below="@id/separator_1">
+
+            <TextView
+                style="@style/H3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/form_title_2"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/H4"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_2_desc_en"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/province"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/province"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/city"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/city"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/sector"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/sector"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/company_age"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/range_year"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/employee_number"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/range_employee"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/income"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/range_income"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/burn_rate"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/burn_rate"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/separator_2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line_separator"
+            android:layout_below="@id/container_2"/>
+
+        <LinearLayout
+            android:id="@+id/container_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin"
+            android:layout_below="@id/separator_2">
+
+            <TextView
+                style="@style/H3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/form_title_3"
+                android:textColor="@color/black" />
+
+            <TextView
+                style="@style/H4"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="@string/form_3_desc_en"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/funding_category"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/fund_category"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                android:hint="@string/range"
+                android:animateLayoutChanges="false"
+                app:endIconMode="dropdown_menu"
+                app:endIconDrawable="@drawable/expand"
+                app:endIconTint="@color/black">
+
+                <AutoCompleteTextView
+                    android:id="@+id/fund_range"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/edittext"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/container_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/container_3">
+
+            <LinearLayout
+                android:id="@+id/container_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin"
+                android:background="@drawable/form_footer">
+
+                <TextView
+                    style="@style/H3C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/form_footer_thanks"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/H4"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_footer_desc"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/container_all_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_finish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/all_btn"
+                        android:layout_gravity="center">
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/tv_btn_finish"
+                        style="@style/H3B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finish"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

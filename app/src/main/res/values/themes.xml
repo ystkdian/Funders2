@@ -14,10 +14,25 @@
         <!-- Customize your theme here. -->
     </style>
 
+<!--    <style name="AppTheme.ActionBarTransparent" parent="Theme.Funders">-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="windowActionBarOverlay">true</item>-->
+<!--        <item name="colorPrimary">@android:color/transparent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.ColoredBottomNav" parent="AppTheme.ActionBarTransparent">-->
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorOnPrimary">@android:color/darker_gray</item>-->
+<!--    </style>-->
+
     <style name="Theme.Funders.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+<!--    <style name="noRipple" parent="Theme.MaterialComponents">-->
+<!--        <item name="rippleColor">@android:color/transparent</item>-->
+<!--    </style>-->
 
     <style name="H0">
         <item name="android:fontFamily">@font/poppins_bold</item>
@@ -40,6 +55,18 @@
     <style name="H3">
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textSize">@dimen/h3</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H3B">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/h3b</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H3C">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">@dimen/h3c</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
