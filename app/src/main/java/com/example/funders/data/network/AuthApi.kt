@@ -17,6 +17,7 @@ interface AuthApi {
         @Field("password") password: String
     ): LoginResponse
 
+
     @GET("api/auth/get_all_investor")
     fun getInvestors(
         @Field("alamat") alamat: String,

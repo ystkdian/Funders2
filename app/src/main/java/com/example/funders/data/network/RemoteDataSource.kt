@@ -1,6 +1,6 @@
 package com.example.funders.data.network
 
-import com.example.funders.BuildConfig
+import androidx.viewbinding.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

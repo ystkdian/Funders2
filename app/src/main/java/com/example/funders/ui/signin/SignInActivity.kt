@@ -6,14 +6,12 @@ import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
-import androidx.lifecycle.asLiveData
 import androidx.lifecycle.lifecycleScope
 import com.example.funders.BaseActivityBaseFragment
-import com.example.funders.data.UserPreferences
-import com.example.funders.databinding.ActivitySignInBinding
 import com.example.funders.data.network.AuthApi
 import com.example.funders.data.network.Resource
 import com.example.funders.data.repository.AuthRepository
+import com.example.funders.databinding.ActivitySignInBinding
 import com.example.funders.enable
 import com.example.funders.startNewActivity
 import com.example.funders.ui.AuthViewModel
@@ -30,7 +28,7 @@ class SignInActivity : BaseActivityBaseFragment<AuthViewModel, ActivitySignInBin
         supportActionBar?.hide()
 
         binding.loading.visible(false)
-        binding.btnSignIn.enable(false)
+        binding.btnSignIn.enable(true)
 
         binding.navigateToSignUp.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)

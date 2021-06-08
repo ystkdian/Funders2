@@ -1,13 +1,13 @@
 package com.example.funders
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.asLiveData
 import com.example.funders.data.UserPreferences
-import com.example.funders.ui.signin.SignInActivity
+import com.example.funders.ui.MainActivity
 
 class StateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +17,7 @@ class StateActivity : AppCompatActivity() {
         val userPreferences = UserPreferences(this)
         userPreferences.authToken.asLiveData().observe(this, Observer {
             Toast.makeText(this, it ?: "Token is Null", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, SignInActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         })
     }
 }
